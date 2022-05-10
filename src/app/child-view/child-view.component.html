@@ -1,0 +1,14 @@
+<igx-list *ngFor="let item of dataSource1Table1" class="list">
+  <igx-list-item [isHeader]="false" class="list-item">
+    <span igxListThumbnail>
+      <igx-avatar icon="person" [roundShape]="true"></igx-avatar>
+    </span>
+    <span igxListLineTitle>{{ item.CompanyName }}</span>
+    <span igxListLineSubTitle>{{ item.ContactName }}</span>
+    <span igxListAction>
+      <igx-icon class="icon">
+        star
+      </igx-icon>
+    </span>
+  </igx-list-item>
+</igx-list>
